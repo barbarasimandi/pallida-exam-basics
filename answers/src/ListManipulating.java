@@ -26,7 +26,17 @@ public class ListManipulating {
     try {
       List<String> lines = new ArrayList<>();
       lines.add(nextFav);
-      Files.write(filePath, lines, StandardOpenOption.APPEND);
+
+      lines = Files.readAllLines(filePath);
+      for (int i = 0; i < lines.size(); i++) {
+        if (lines.get(i).equals(nextFav)) {
+          lines.remove(nextFav);
+        } else if(!(lines.get(i).equals(nextFav))) {
+            lines.add(nextFav);
+        }
+      }
+
+      Files.write(filePath, lines);
     } catch (IOException e) {
       e.printStackTrace();
     }
