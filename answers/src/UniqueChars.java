@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class UniqueChars {
 
@@ -11,15 +12,16 @@ public class UniqueChars {
     // ["n", "g", "r", "m"]
   }
 
-  public static String uniqueCharacters(String input) {
+  public static ArrayList<Character> uniqueCharacters(String input) {
 
     ArrayList<Character> uniques = new ArrayList<>();
     uniques.add(input.charAt(0));
 
-    for (int i = 0; i < input.length(); i++) {
+    for (int i = 0; i < input.length() - 1; i++) {
         if (uniques.get(0) != input.charAt(i)) {
-          uniques.add(input.charAt(i));
-      }
-    } return uniques.toString();
+        } uniques.add(input.charAt(i));
+      } return uniques;
+    }
   }
-}
+
+
