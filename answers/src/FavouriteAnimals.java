@@ -9,5 +9,8 @@ public class FavouriteAnimals {
     // One animal should be stored only at once
     // Each animal should be written in separate lines
     // The program should only save animals, no need to print them
+
+    ArgsInspect argsInspectObject = new ArgsInspect();
+    argsInspectObject.inspectArgs(args);
   }
 }
