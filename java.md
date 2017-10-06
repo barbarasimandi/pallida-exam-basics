@@ -32,8 +32,17 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+
+A method is a block of statements that has a name and can be executed by calling it.
+A function is also a block of statements that is called by its name. 
+Both can be passed data to operate on (the parameters) and can optionally return data (the return value). 
+A method is associated with an object. 
+Java is a strong object-oriented programming language so everything exist in classes. 
+Therefore there are no such things like functions in Java.
+
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+
+Constructor is a block of code that initializes the newly created object. A counstructor name has to be the same as the class' name, and it doesn’t have a return type. 
+I can have parameters. These parameters can then be used to initialize the fields of the newly created object.
